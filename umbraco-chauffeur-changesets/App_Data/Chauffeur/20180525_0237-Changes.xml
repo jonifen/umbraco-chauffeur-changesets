@@ -1,0 +1,55 @@
+<umbPackage>
+  <DocumentTypes>
+    <DocumentType>
+      <Info>
+        <Name>My First Document Type</Name>
+        <Alias>myFirstDocumentType</Alias>
+        <Icon>icon-document</Icon>
+        <Thumbnail>folder.png</Thumbnail>
+        <Description />
+        <AllowAtRoot>False</AllowAtRoot>
+        <IsListView>False</IsListView>
+        <Compositions />
+        <AllowedTemplates>
+          <Template>MyFirstDocumentType</Template>
+        </AllowedTemplates>
+        <DefaultTemplate>MyFirstDocumentType</DefaultTemplate>
+      </Info>
+      <Structure />
+      <GenericProperties>
+        <GenericProperty>
+          <Name>My First Textbox</Name>
+          <Alias>myFirstTextbox</Alias>
+          <Type>Umbraco.Textbox</Type>
+          <Definition>479f1f15-c5ba-429a-ad2e-72bed7c9e833</Definition>
+          <Tab>Options</Tab>
+          <SortOrder>0</SortOrder>
+          <Mandatory>False</Mandatory>
+        </GenericProperty>
+      </GenericProperties>
+      <Tabs>
+        <Tab>
+          <Id>12</Id>
+          <Caption>Options</Caption>
+          <SortOrder>0</SortOrder>
+        </Tab>
+      </Tabs>
+    </DocumentType>
+  </DocumentTypes>
+  <DataTypes />
+  <Templates>
+    <Template>
+      <Name>My First Document Type</Name>
+      <Alias>MyFirstDocumentType</Alias>
+      <Design><![CDATA[@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.MyFirstDocumentType>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+	Layout = null;
+}
+
+<h1>@Model.Content.MyFirstTextbox</h1>]]></Design>
+    </Template>
+  </Templates>
+  <Macros />
+  <Stylesheets />
+</umbPackage>

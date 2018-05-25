@@ -2,4 +2,12 @@
 obj/
 bin/
 packages/
+**/App_Browsers/
+**/App_Data/Logs/
+**/App_Data/TEMP/
+**/App_Data/Umbraco.sdf
+**/App_Data/umbraco.config
+*.csproj.user
+**/umbraco/
+**/umbraco_client/
 
